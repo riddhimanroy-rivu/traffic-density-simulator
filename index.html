@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Density Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🚦 Traffic Density Simulator</h1>
+            <p>Real-time traffic monitoring simulation</p>
+        </header>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>🚗 Vehicles</h3>
+                <span id="vehicleCount">0</span>
+            </div>
+
+            <div class="card">
+                <h3>📊 Density</h3>
+                <span id="density">0%</span>
+            </div>
+
+            <div class="card">
+                <h3>⚠️ Status</h3>
+                <span id="status">LOW</span>
+            </div>
+
+            <div class="card">
+                <h3>🚦 Signal</h3>
+                <span id="signalStatus">GREEN</span>
+            </div>
+
+        </section>
+
+        <!-- Traffic Road -->
+        <section class="simulation">
+
+            <div class="road">
+
+                <div class="lane lane1">
+                    <div class="car car1">🚗</div>
+                    <div class="car car2">🚙</div>
+                    <div class="car car3">🚕</div>
+                </div>
+
+                <div class="traffic-light">
+                    <div id="red" class="light"></div>
+                    <div id="yellow" class="light"></div>
+                    <div id="green" class="light active"></div>
+                </div>
+
+                <div class="lane lane2">
+                    <div class="car car4">🚓</div>
+                    <div class="car car5">🚐</div>
+                    <div class="car car6">🚗</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Controls -->
+        <section class="controls">
+
+            <button id="startBtn">▶ Start</button>
+            <button id="pauseBtn">⏸ Pause</button>
+            <button id="resetBtn">🔄 Reset</button>
+
+        </section>
+
+        <!-- Density Bar -->
+        <section class="density-section">
+
+            <h2>Traffic Density</h2>
+
+            <div class="progress-container">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <p id="message">Simulation ready. Click Start!</p>
+
+        </section>
+
+        <footer>
+            <p>Traffic Density Simulator | Code Voyage Project</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
